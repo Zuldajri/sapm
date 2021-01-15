@@ -3,8 +3,8 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-	        "type": "string"
-		},
+	     "type": "string"
+	},
         "adminUsername": {
             "type": "string"
         },
