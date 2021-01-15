@@ -29,6 +29,9 @@
         "staticIP": {
             "type": "string"
         },
+	"linuxJumpboxIpAllocationMethod": {
+            "type": "string"
+        },
         "storageAccountName": {
             "type": "string"
         }
@@ -63,7 +66,7 @@
             "apiVersion": "2019-09-01",
             "location": "[parameters('location')]",
             "properties": {
-                "publicIpAllocationMethod": "dynamic"
+                "publicIpAllocationMethod": "[parameters('linuxJumpboxIpAllocationMethod')]"
             }
         },
         {
