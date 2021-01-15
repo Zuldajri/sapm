@@ -23,7 +23,7 @@
         "subnetName": {
             "type": "string"
         },
-        "StaticIP": {
+        "staticIP": {
             "type": "string"
         },
         "storageAccountName": {
@@ -62,7 +62,7 @@
                         "name": "ipconfig1",
                         "properties": {
                             "privateIPAllocationMethod": "Static",
-                            "privateIPAddress": "[parameters('StaticIP')]",
+                            "privateIPAddress": "[parameters('staticIP')]",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIpName'))]"
                             },
