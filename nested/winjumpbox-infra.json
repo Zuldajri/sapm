@@ -26,6 +26,9 @@
         "staticIP": {
             "type": "string"
         },
+	"winJumpboxIpAllocationMethod": {
+            "type": "string"
+        },
         "storageAccountName": {
             "type": "string"
         }
@@ -45,7 +48,7 @@
             "name": "[variables('publicIpName')]",
             "location": "[parameters('location')]",
             "properties": {
-                "publicIPAllocationMethod": "Dynamic"
+                "publicIPAllocationMethod": "[parameters('winJumpboxIpAllocationMethod')]"
             }
         },
         {
