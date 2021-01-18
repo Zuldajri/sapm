@@ -24,12 +24,12 @@
         "operatingSystem": {
             "type": "string",
             "allowedValues": [
-		"SLES for SAP 15",
+		        "SLES for SAP 15",
                 "SLES for SAP 12 SP4",
-		"SLES for SAP 12 SP3",
-		"SLES for SAP 12 SP2",
+		        "SLES for SAP 12 SP3",
+		        "SLES for SAP 12 SP2",
                 "RHEL 7.2 for SAP HANA",
-		"RHEL 7.3 for SAP HANA",
+		        "RHEL 7.3 for SAP HANA",
                 "RHEL 7.6"
             ]
         },
@@ -57,7 +57,7 @@
 },
     "resources": [
           { 
-            "condition": "[or(or(equals(variables('vmSize'),'Standard_E16s_v3'),equals(variables('vmSize'),'Standard_E32s_v3')), or(equals(variables('vmSize'),'Standard_E64s_v3'),equals(variables('vmSize'),'Standard_GS5')))]",
+            "condition": "[or(or(or(equals(variables('vmSize'),'Standard_E8s_v3'),equals(variables('vmSize'),'Standard_E16s_v3')),or(equals(variables('vmSize'),'Standard_E32s_v3'),equals(variables('vmSize'),'Standard_E64s_v3'))),or(or(equals(variables('vmSize'),'Standard_GS5'),equals(variables('vmSize'),'Standard_M32ts')),or(equals(variables('vmSize'),'Standard_M32ls'),equals(variables('vmSize'),'Standard_M64ls'))))]",
             "apiVersion": "2019-05-01",
             "name": "[concat('SmallLinkedTemplate', parameters('vmName'))]",
             "type": "Microsoft.Resources/deployments",
@@ -221,7 +221,7 @@
 	        }
         },
         {
-            "condition": "[equals(variables('vmSize'), 'Standard_M208ms_v2')]",
+            "condition": "[or(or(equals(variables('vmSize'),'Standard_M208s_v2'),equals(variables('vmSize'),'Standard_M208ms_v2')), or(equals(variables('vmSize'),'Standard_M416s_v2'),equals(variables('vmSize'),'Standard_M416ms_v2')))]",
             "apiVersion": "2019-05-01",
             "name": "[concat('superLargeLinkedTemplate', parameters('vmName'))]",
             "type": "Microsoft.Resources/deployments",
