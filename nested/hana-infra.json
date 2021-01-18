@@ -38,9 +38,7 @@
         },
         "availSetName": {
             "type": "string"
-        },                    
-        "SMTUri": {
-            "type": "string"        
+        }
     },
   "variables": {
     "baseUri": "https://raw.githubusercontent.com/Zuldajri/sapm/master/",
@@ -92,10 +90,7 @@
                     },
                     "availSetName": {
                         "value": "[parameters('availSetName')]"
-                      },                             
-                    "SMTUri":{
-                        "value": "[parameters('SMTUri')]"
-                    }
+                      }
                 }
             }
         },
@@ -136,10 +131,7 @@
                     },
                     "availSetName": {
                         "value": "[parameters('availSetName')]"
-                      },                             
-                    "SMTUri":{
-                        "value": "[parameters('SMTUri')]"
-                    }
+                      }
                 }
             }
         },
@@ -180,10 +172,7 @@
                     },
                     "availSetName": {
                         "value": "[parameters('availSetName')]"
-                      },                             
-                    "SMTUri":{
-                        "value": "[parameters('SMTUri')]"
-                    }
+                      }
                 }
             }
         },
@@ -224,10 +213,7 @@
                     },
                     "availSetName": {
                         "value": "[parameters('availSetName')]"
-                      },                             
-                    "SMTUri":{
-                        "value": "[parameters('SMTUri')]"
-                    }
+                      }
                 } 
 	        }
         },
@@ -268,10 +254,7 @@
                     },
                     "availSetName": {
                         "value": "[parameters('availSetName')]"
-                      },                             
-                    "SMTUri":{
-                        "value": "[parameters('SMTUri')]"
-                    }
+                      }
                 }
             }
         }
