@@ -24,12 +24,13 @@
         "operatingSystem": {
             "type": "string",
             "allowedValues": [
-		        "SLES for SAP 15",
+		"SLES for SAP 15",
                 "SLES for SAP 12 SP4",
-		        "SLES for SAP 12 SP3",
-		        "SLES for SAP 12 SP2",
-                "RHEL 7.2 for SAP HANA",
-		        "RHEL 7.3 for SAP HANA",
+		"SLES for SAP 12 SP3",
+                "RHEL 7.4 for SAP HANA",
+		"RHEL 7.5 for SAP HANA",
+                "RHEL 7.6 for SAP HANA",
+                "RHEL 7.7 for SAP HANA",
                 "RHEL 7.6"
             ]
         },
