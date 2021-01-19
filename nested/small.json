@@ -217,7 +217,7 @@
             "condition": "[equals(parameters('vmSize'), 'Standard_GS5')]",
             "apiVersion": "2019-09-01",
             "type": "Microsoft.Network/networkInterfaces",
-            "name": "[variables('nicName')]",
+            "name": "[concat(variables('nicName'), '-noaccel')]",
             "location": "[resourceGroup().location]",
             "properties": {
                 "enableAcceleratedNetworking": false,
