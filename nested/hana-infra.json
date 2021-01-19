@@ -40,6 +40,9 @@
         "hanaVmIpAllocationMethod": {
             "type": "string"
         },
+	"storageAccountName": {
+            "type": "string"
+        },
         "availSetName": {
             "type": "string"
         }
