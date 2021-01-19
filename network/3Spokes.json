@@ -296,7 +296,7 @@
 	   }
  	},
         {
-            "name": "[concat(parameters('privateDnsZoneName'), '/', parameters('privateDnsZoneName'), '-link')]",
+            "name": "[concat(parameters('privateDnsZoneName'), '/', parameters('privateDnsZoneName'), '-link-spoke1')]",
             "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
             "apiVersion": "2018-09-01",
             "location": "global",
@@ -346,7 +346,7 @@
 			}
 		},
         {
-            "name": "[concat(parameters('privateDnsZoneName'), '/', parameters('privateDnsZoneName'), '-link')]",
+            "name": "[concat(parameters('privateDnsZoneName'), '/', parameters('privateDnsZoneName'), '-link-spoke2')]",
             "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
             "apiVersion": "2018-09-01",
             "location": "global",
@@ -396,7 +396,7 @@
 			}
 		},
         {
-            "name": "[concat(parameters('privateDnsZoneName'), '/', parameters('privateDnsZoneName'), '-link')]",
+            "name": "[concat(parameters('privateDnsZoneName'), '/', parameters('privateDnsZoneName'), '-link-spoke3')]",
             "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
             "apiVersion": "2018-09-01",
             "location": "global",
