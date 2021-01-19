@@ -419,7 +419,8 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('sharedServicesSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('dmzSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('gatewaySubnetName'))]",
-                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke1VnetName'))]"
+                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke1VnetName'))]",
+                "[resourceId('Microsoft.Network/virtualNetworks/virtualNetworkPeerings/', concat(variables('hubVnetName'), '/gwPeering_', variables('hubVnetName'), '_', variables('spoke2VnetName')))]"
             ],
             "properties": {
                 "allowVirtualNetworkAccess": true,
@@ -442,7 +443,8 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('mgmtSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('sharedServicesSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('dmzSubnetName'))]",
-                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke1VnetName'))]"
+                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke1VnetName'))]",
+                "[resourceId('Microsoft.Network/virtualNetworks/virtualNetworkPeerings/', concat(variables('hubVnetName'), '/Peering_', variables('hubVnetName'), '_', variables('spoke2VnetName')))]"
             ],
             "properties": {
                 "allowVirtualNetworkAccess": true,
@@ -466,7 +468,8 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('sharedServicesSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('dmzSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('gatewaySubnetName'))]",
-                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke2VnetName'))]"
+                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke2VnetName'))]",
+                "[resourceId('Microsoft.Network/virtualNetworks/virtualNetworkPeerings/', concat(variables('hubVnetName'), '/gwPeering_', variables('hubVnetName'), '_', variables('spoke1VnetName')))]"
             ],
             "properties": {
                 "allowVirtualNetworkAccess": true,
@@ -489,7 +492,8 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('mgmtSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('sharedServicesSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('dmzSubnetName'))]",
-                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke2VnetName'))]"
+                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke2VnetName'))]",
+                "[resourceId('Microsoft.Network/virtualNetworks/virtualNetworkPeerings/', concat(variables('hubVnetName'), '/peering_', variables('hubVnetName'), '_', variables('spoke1VnetName')))]"
             ],
             "properties": {
                 "allowVirtualNetworkAccess": true,
@@ -513,7 +517,8 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('sharedServicesSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('dmzSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('gatewaySubnetName'))]",
-                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke1VnetName'))]"
+                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke1VnetName'))]",
+                "[resourceId('Microsoft.Network/virtualNetworks/virtualNetworkPeerings/', concat(variables('spoke2VnetName'), '/gwPeering_', variables('spoke2VnetName'), '_', variables('hubVnetName')))]"
             ],
             "properties": {
                 "allowVirtualNetworkAccess": true,
@@ -536,7 +541,8 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('mgmtSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('sharedServicesSubnetName'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('dmzSubnetName'))]",
-                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke1VnetName'))]"
+                "[resourceId('Microsoft.Network/virtualNetworks', variables('spoke1VnetName'))]",
+                "[resourceId('Microsoft.Network/virtualNetworks/virtualNetworkPeerings/', concat(variables('spoke2VnetName'), '/peering_', variables('spoke2VnetName'), '_', variables('hubVnetName')))]"
             ],
             "properties": {
                 "allowVirtualNetworkAccess": true,
