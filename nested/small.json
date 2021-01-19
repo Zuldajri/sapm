@@ -581,7 +581,7 @@
             "condition": "[or(or(equals(parameters('vmSize'),'Standard_M32ts'),equals(parameters('vmSize'),'Standard_M32ls')),or(equals(parameters('vmSize'),'Standard_M64ls'),equals(parameters('vmSize'),'Standard_M64s')))]",
             "apiVersion": "2019-07-01",
             "type": "Microsoft.Compute/virtualMachines",
-            "name": "[parameters('vmName')]",
+            "name": "[concat(parameters('vmName'),'-M')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]",
