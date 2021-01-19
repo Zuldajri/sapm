@@ -101,7 +101,7 @@
             "name": "[parameters('vmName')]",
             "location": "[parameters('location')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Network/networkSecurityGroups/', variables('vNicName'))]"
+                "[resourceId('Microsoft.Network/networkInterfaces/', variables('vNicName'))]"
             ],
             "properties": {
                 "hardwareProfile": {
